@@ -10,11 +10,7 @@ cargar=function(){
     mostrarCuentas();
 }
 
-/*
-    Muestra en pantalla una tabla con la información de todas las cuentas del arreglo.
-    Columnas: NUMERO CUENTA, NOMBRE, SALDO
-    En la columna NOMBRE concatenar el nombre y el apellido
-*/
+
 mostrarCuentas=function(){
     let cmpTabla=document.getElementById("tablaCuentas");
     let contenidoTabla="<table><tr>"+
@@ -31,12 +27,14 @@ mostrarCuentas=function(){
     }
     contenidoTabla+="</table>"
     cmpTabla.innerHTML=contenidoTabla;
+    /*
+    Muestra en pantalla una tabla con la información de todas las cuentas del arreglo.
+    Columnas: NUMERO CUENTA, NOMBRE, SALDO
+    En la columna NOMBRE concatenar el nombre y el apellido
+*/
 }
 
-/*
-    Busca la cuenta en el arreglo en función del número de cuenta,
-    si existe retorna el objeto cuenta, caso contrario retorna null. 
-*/
+
 buscarCuenta=function(numeroCuenta){
     let cuentaEncontrada=null;
 
@@ -47,12 +45,13 @@ buscarCuenta=function(numeroCuenta){
     }
 
     return cuentaEncontrada;
+    /*
+    Busca la cuenta en el arreglo en función del número de cuenta,
+    si existe retorna el objeto cuenta, caso contrario retorna null. 
+*/
 }
 
-/*
-    Agrega una cuenta al arreglo, solamente si no existe otra cuenta con el mismo numero.
-    No retorna nada
-*/
+
 agregarCuenta=function(cuenta){
     //Si ya existe mostrar un alert CUENTA EXISTENTE
     //Si se agrega, mostrar un alert CUENTA AGREGADA
@@ -65,6 +64,10 @@ agregarCuenta=function(cuenta){
     }else{
         alert("CUENTA EXISTENTE");
     }
+    /*
+    Agrega una cuenta al arreglo, solamente si no existe otra cuenta con el mismo numero.
+    No retorna nada
+*/
 }
 
 agregar=function(){

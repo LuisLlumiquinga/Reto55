@@ -61,11 +61,6 @@ ejecutarDeposito = function() {
     //Muestra en pantalla el nuevo saldo de la cuenta
 }
 
-depositar = function(numeroCuenta, monto) {
-    let cuentaAfectada;
-    //invoca a buscarCuenta, guarda el resultado en la variable cuentaAfectada;
-    //Al saldo actual de la cuenta afectada, le suma el monto que recibe como parámetro
-}
 
 retirar = function(numeroCuenta, monto) {
     let cuentaAfectada;
