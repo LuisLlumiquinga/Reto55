@@ -10,8 +10,12 @@ movimientos=[
     {numeroCuenta:"02345211",monto:65.23,tipo:"C"},
     {numeroCuenta:"02345211",monto:12.0,tipo:"D"},
 ]
-
 cargar=function(){
+     ocultarComponente("divCuentas");
+    ocultarComponente("divMovimientos");
+    ocultarComponente("divTransacciones");
+}
+cargarCuenta=function(){
     mostrarComponente("divCuentas");
     ocultarComponente("divMovimientos");
     ocultarComponente("divTransacciones");
